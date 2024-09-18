@@ -1,73 +1,53 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# FUTURE WORLD
+### Este backend fue desarrollado con el propósito de profundizar en el uso de NestJS y TypeORM, enfocándose en la gestión de productos, categorías y sus imágenes. Se implementó MySQL como base de datos, proporcionando un entorno sólido y eficiente para almacenar y organizar los datos. TypeORM se utilizó para facilitar la interacción con la base de datos, garantizando una estructura flexible y escalable para manejar las relaciones entre productos y categorías de manera eficiente.
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+## Versiones
+  * TypeScript: 5.1.3
+  * Node.js: v20.15.0
+  * TypeORM: 0.3.20
+  * MySQL2: 3.11.0
+    
+## Clonar el repository
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
-
-## Description
-
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-
-## Installation
+```bash
+$ git clone https://github.com/ismaelnv/FutureWord-backend-.git
+```
+## Instalar las dependencias
 
 ```bash
 $ npm install
 ```
-
-## Running the app
+## Ejecutar Proyecto
 
 ```bash
-# development
 $ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
 ```
-
-## Test
-
+## Algunos Endpoints del Proyecto 
+Este endpoint trae todos los productos.
 ```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
+$ http://localhost:8080/products
 ```
+![image](https://github.com/user-attachments/assets/874575b5-4a88-4b4c-87a4-f9ab5459a58f)
 
-## Support
+Este endpoint crea productos.
+```bash
+$ http://localhost:8080/products
+```
+![image](https://github.com/user-attachments/assets/139178d3-e76e-4854-90e1-cba1ae7ca5a0)
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+Este endpoint crea una imagen y la relaciona con un producto existente.
+```bash
+$ http://localhost:8080/images/1
+```
+![image](https://github.com/user-attachments/assets/e4813094-13ef-4779-817f-4c724a8a3791)
 
-## Stay in touch
+Creación de colecciones.
+```bash
+$ http://localhost:8080/collections
+```
+![image](https://github.com/user-attachments/assets/4cc9a67e-2b40-486d-98cd-f65df491f876)
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
 
-## License
 
-Nest is [MIT licensed](LICENSE).
+
+
